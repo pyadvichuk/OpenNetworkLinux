@@ -6,7 +6,12 @@ include $(ONL)/make/config.amd64.mk
 #
 export PLATFORM_LIST=$(shell onlpm --list-platforms --arch amd64 --csv )
 
+ifdef ONL_VENDOR_WILDIX
+RFS_CONFIG := $(ONL)/builds/any/rootfs/$(ONL_DEBIAN_SUITE)/standard/wildix.yml
+else
 RFS_CONFIG := $(ONL)/builds/any/rootfs/$(ONL_DEBIAN_SUITE)/standard/standard.yml
+endif
+
 RFS_DIR := rootfs-amd64.d
 RFS_CPIO := rootfs-amd64.cpio.gz
 RFS_SQUASH := rootfs-amd64.sqsh

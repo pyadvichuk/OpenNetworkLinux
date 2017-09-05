@@ -1,0 +1,67 @@
+############################################################
+#
+# Common Alternative Release Packages for all systems.
+#
+############################################################
+- base-files
+- sysvinit-core
+- locales
+- python
+- apt
+- procps
+- net-tools
+- iputils-ping
+- less
+- openssh-server
+- iproute
+- resolvconf
+- zile
+- nano
+- lsof
+- mingetty
+- traceroute
+- realpath
+- rsyslog
+- nfs-common
+- netbase
+- bsdmainutils
+- ifupdown
+- psmisc
+- make
+- python-cherrypy3
+- python-tz
+- pciutils
+- usbutils
+- mtd-utils
+- i2c-tools
+- isc-dhcp-client
+- ntp
+- wget
+- ethtool
+- localepurge
+- telnetd
+- python-pyinotify
+- cpio
+- util-linux
+- dosfstools
+- rssh
+- ntpdate
+- parted
+- watchdog
+- netplug
+- binutils
+- file
+- smartmontools
+- realpath
+- iptables
+- onl-faultd
+- python-parted
+- python-yaml
+- bzip2
+- xz-utils
+- unzip
+- openssl
+- gdb
+- tcpdump
+- strace
+- sysstat

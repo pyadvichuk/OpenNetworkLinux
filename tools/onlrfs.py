@@ -27,7 +27,7 @@ import random
 import re
 import json
 
-logger = onlu.init_logging('onlrfs')
+logger = onlu.init_logging('onlrfs', logging.DEBUG)
 
 class OnlRfsError(Exception):
     """General Error Exception"""
@@ -552,6 +552,8 @@ if __name__ == '__main__':
     ap.add_argument("--squash")
 
     ops = ap.parse_args()
+
+    logger.error("onlrfs.py(args) ====> " + str(sys.argv))
 
     try:
         x = OnlRfsBuilder(ops.config, ops.arch)

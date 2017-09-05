@@ -24,7 +24,7 @@ import lsb_release
 
 g_dist_codename = lsb_release.get_distro_information().get('CODENAME')
 
-logger = onlu.init_logging('onlpm', logging.INFO)
+logger = onlu.init_logging('onlpm', logging.DEBUG)
 
 class OnlPackageError(Exception):
     """General Package Error Exception
@@ -878,7 +878,7 @@ class OnlPackageManager(object):
                     logger.debug("Removing package cache %s" % CACHE)
                     os.unlink(CACHE)
 
-
+        
         for root, dirs, files in os.walk(basedir):
             for f in files:
                 if f in pkgspec:
@@ -1151,6 +1151,8 @@ if __name__ == '__main__':
     ap.add_argument("--platform-manifest", metavar=('PACKAGE'))
 
     ops = ap.parse_args()
+
+    logger.error("onlpm.py(args) ====> " + str(sys.argv))
 
     archlist = []
     for a in ops.arches:

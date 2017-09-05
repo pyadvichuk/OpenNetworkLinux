@@ -1,0 +1,1 @@
+!include $ONL_TEMPLATES/no-platform-modules.yml ARCH=amd64 VENDOR=wildix BASENAME=x86-64-wildix-m9f
