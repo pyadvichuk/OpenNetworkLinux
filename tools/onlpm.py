@@ -878,7 +878,7 @@ class OnlPackageManager(object):
                     logger.debug("Removing package cache %s" % CACHE)
                     os.unlink(CACHE)
 
-        
+
         for root, dirs, files in os.walk(basedir):
             for f in files:
                 if f in pkgspec:

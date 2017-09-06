@@ -30,9 +30,8 @@ else:
 # The following ONL packages are needed for each platform:
 #
 # The platform-config package
-# The ONLP package
 #
-ONL_PATTERNS = [ "onlp-%(platform)s", "onl-platform-config-%(platform)s" ]
+ONL_PATTERNS = [ "onl-platform-config-%(platform)s" ]
 
 PATTERNS = list(onlu.sflatten(ops.add_patterns))
 
